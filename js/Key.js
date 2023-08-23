@@ -31,4 +31,63 @@
 	window.addEventListener("keydown",onKeyDown,false);
 	window.addEventListener("keyup",onKeyUp,false);
 
+	btnUp = document.getElementById('upbtn')
+	btnUp.addEventListener("mousedown", function() {
+		window.dispatchEvent(new KeyboardEvent('keydown',{'keyCode':'38'}))
+	});
+	btnUp.addEventListener("mouseup", function() {
+		window.dispatchEvent(new KeyboardEvent('keyup',{'keyCode':'38'}))
+	});
+	btnUp.addEventListener("touchstart", function() {
+		window.dispatchEvent(new KeyboardEvent('keydown',{'keyCode':'38'}))
+	});
+	btnUp.addEventListener("touchend", function() {
+		window.dispatchEvent(new KeyboardEvent('keyup',{'keyCode':'38'}))
+	});
+
+
+	btnDown = document.getElementById('bottombtn')
+	btnDown.addEventListener("mousedown", function() {
+		window.dispatchEvent(new KeyboardEvent('keydown',{'keyCode':'40'}))
+	});
+	btnDown.addEventListener("mouseup", function() {
+		window.dispatchEvent(new KeyboardEvent('keyup',{'keyCode':'40'}))
+	});
+	btnDown.addEventListener("touchstart", function() {
+		window.dispatchEvent(new KeyboardEvent('keydown',{'keyCode':'40'}))
+	});
+	btnDown.addEventListener("touchend", function() {
+		window.dispatchEvent(new KeyboardEvent('keyup',{'keyCode':'40'}))
+	});
+
+	btnLeft = document.getElementById('leftbtn')
+	btnLeft.addEventListener("mousedown", function() {
+		window.dispatchEvent(new KeyboardEvent('keydown',{'keyCode':'37'}))
+	});
+	btnLeft.addEventListener("mouseup", function() {
+		window.dispatchEvent(new KeyboardEvent('keyup',{'keyCode':'37'}))
+	});
+	btnLeft.addEventListener("touchstart", function() {
+		window.dispatchEvent(new KeyboardEvent('keydown',{'keyCode':'37'}))
+	});
+	btnLeft.addEventListener("touchend", function() {
+		window.dispatchEvent(new KeyboardEvent('keyup',{'keyCode':'37'}))
+	});
+
+
+	btnRight = document.getElementById('rightbtn')
+	btnRight.addEventListener("mousedown", function() {
+		window.dispatchEvent(new KeyboardEvent('keydown',{'keyCode':'39'}))
+	});
+	btnRight.addEventListener("mouseup", function() {
+		window.dispatchEvent(new KeyboardEvent('keyup',{'keyCode':'39'}))
+	});
+	btnRight.addEventListener("touchstart", function() {
+		window.dispatchEvent(new KeyboardEvent('keydown',{'keyCode':'39'}))
+	});
+	btnRight.addEventListener("touchend", function() {
+		window.dispatchEvent(new KeyboardEvent('keyup',{'keyCode':'39'}))
+	});
+
+
 })(window);
