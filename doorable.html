@@ -21,8 +21,71 @@
 	<meta property="og:site_name" content="it's a(door)able">
 
 	<!-- Style -->
-	<link rel="stylesheet" type="text/css" href="css/doorable.css"> 
+	<link rel="stylesheet" type="text/css" href="css/doorable.css">
+	<style type="text/css">
+		.camera_direction{
+			/*background-color: sandybrown;*/
+			text-align: center;
+			position: absolute;
+			/*top: 0%;*/
+			width: 300px;
+			height: 300px;
+			right: 10px;
+			bottom: 10px;
+		}
+		.direction_div{
+			position:relative;
+			width: 30px;
+			height: 30px;
+		}
+		/*left*/
+		.left_direction {
+			top: 5%;
+			left: 20%;
+		}
+		/*bottom*/
+		.bottom_direction{
+			top:5%;
+			left: 40%;
+		}
+		/*right*/
+		.right_direction{
+			top: -15%;
+			left: 60%;
+		}
+		/*top*/
+		.top_direction{
+			top: 2%;
+			left: 40%;
+		}
 
+		i {
+			border: solid black;
+			border-width: 0 3px 3px 0;
+			display: inline-block;
+			padding: 3px;
+		}
+
+		.right {
+			transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+		}
+
+		.left {
+			transform: rotate(135deg);
+			-webkit-transform: rotate(135deg);
+		}
+
+		.up {
+			transform: rotate(-135deg);
+			-webkit-transform: rotate(-135deg);
+		}
+
+		.down {
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+	</style>
 </head>
 <body>
 
@@ -68,6 +131,23 @@
 			</div>
 		</div>
 		
+	</div>
+
+	<div>
+		<div class="camera_direction">
+			<div class="direction_div top_direction">
+				<button data-inline="true" id="upbtn"><i class="up"></i></button>
+			</div>
+			<div class="direction_div left_direction">
+				<button data-inline="true" id="leftbtn"><i class="left"></i></button>
+			</div>
+			<div class="direction_div bottom_direction">
+				<button data-inline="true" id="bottombtn"><i class="down"></i></button>
+			</div>
+			<div class="direction_div right_direction">
+				<button data-inline="true" id="rightbtn"><i class="right"></i></button>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
